@@ -1,7 +1,6 @@
-lua
 --[[
     VT HUB - Script Completo
-    Carregue com: loadstring(game:HttpGet("https://raw.githubusercontent.com/scripts/main/vthub.lua"))()
+    Carregue com: loadstring(game:HttpGet("https://raw.githubusercontent.com/victorhenrique83452-bit/Vt-Hub-/main/vthub.lua"))()
 ]]
 
 local Players = game:GetService("Players")
@@ -520,11 +519,9 @@ local function CreateUI()
     return screenGui
 end
 
--- Inicialização
 CreateFOVCircle()
 CreateUI()
 
--- Loop Principal
 RunService.RenderStepped:Connect(function()
     if Config.ESPEnabled then
         for _, player in pairs(Players:GetPlayers()) do
@@ -545,4 +542,4 @@ RunService.RenderStepped:Connect(function()
     end
     
     if Config.AimbotEnabled then
-        if UserInputService:IsKeyDo
+        if UserInputService:IsKeyDown(Enum.KeyCode.Le
