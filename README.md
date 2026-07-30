@@ -1,2 +1,2 @@
-# Vt-Hub-
+# Vthub.lua
 .
